@@ -1,0 +1,139 @@
+.nav-main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+}
+
+.logo {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: -1px;
+}
+
+.mobile-div {
+  position: absolute;
+  background-color: hsl(0, 0%, 98%);
+  width: 50%;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  z-index: 20;
+  padding: 15px;
+}
+
+.mobile-nav li {
+  list-style: none;
+  padding: 10px 0px;
+  color: hsl(0, 0%, 41%);
+  height: auto;
+  cursor: pointer;
+}
+
+.drop-down {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-nav ul {
+  margin: 10px 0px;
+  padding-left: 15px;
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.close-icon {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 15px;
+}
+
+.underlay {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 0;
+}
+
+.mobile-nav button {
+  margin: 15px 0px;
+  color: hsl(0, 0%, 41%);
+  font-size: 18px;
+  background: none;
+  border-radius: 10px;
+  padding: 5px 0px;
+  cursor: pointer;
+}
+
+.login-button {
+  border: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-main-container {
+    margin: 15px 30px;
+  }
+
+  .mobile-div {
+    position: relative;
+    background-color: hsl(0, 0%, 98%);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 60px;
+    overflow: hidden;
+  }
+  .mobile-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .mobile-nav li {
+    margin: 0px 30px;
+  }
+
+  .nav-items {
+    display: flex;
+  }
+
+  .mobile-nav button {
+    margin: 0px 15px;
+    padding: 5px 30px;
+    border-radius: 10px;
+  }
+
+  .mobile-nav ul {
+    padding: 15px;
+    margin: 0;
+  }
+
+  .drop-down-container {
+    position: absolute;
+    background-color: #fff;
+    top: 60px;
+    filter: drop-shadow(0 0 0.8rem rgba(0, 0, 0, 12%));
+    border-radius: 10px;
+  }
+  .box-1 {
+    left: -80px;
+    width: 210px;
+  }
+
+  .box-2 {
+    left: 180px;
+    width: 180px;
+  }
+}
