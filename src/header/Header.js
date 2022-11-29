@@ -18,27 +18,29 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="nav-main-container">
-      {/* main navigation */}
-      <h2 className="logo">snap</h2>
-      {windowWidth < 768 ? (
-        <MobileHeader
-          open={open}
-          setOpen={setOpen}
-          setFeatures={setFeatures}
-          openFeatures={openFeatures}
-          setCompany={setCompany}
-          openCompany={openCompany}
-        />
-      ) : (
-        <LaptopHeader
-          setFeatures={setFeatures}
-          openFeatures={openFeatures}
-          setCompany={setCompany}
-          openCompany={openCompany}
-        />
-      )}
-    </div>
+    <nav>
+      <div className="nav-main-container">
+        {/* main navigation */}
+        <h2 className="logo">snap</h2>
+        {windowWidth < 768 ? (
+          <MobileHeader
+            open={open}
+            setOpen={setOpen}
+            setFeatures={setFeatures}
+            openFeatures={openFeatures}
+            setCompany={setCompany}
+            openCompany={openCompany}
+          />
+        ) : (
+          <LaptopHeader
+            setFeatures={setFeatures}
+            openFeatures={openFeatures}
+            setCompany={setCompany}
+            openCompany={openCompany}
+          />
+        )}
+      </div>
+    </nav>
   );
 };
 

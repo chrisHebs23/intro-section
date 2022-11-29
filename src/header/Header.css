@@ -82,6 +82,9 @@
 @media only screen and (min-width: 768px) {
   .nav-main-container {
     margin: 15px 30px;
+    position: relative;
+    overflow: visible;
+    z-index: 21;
   }
 
   .mobile-div {
@@ -93,7 +96,6 @@
     flex-direction: row;
     align-items: center;
     padding-left: 60px;
-    overflow: hidden;
   }
   .mobile-nav {
     flex-direction: row;
@@ -107,6 +109,10 @@
 
   .nav-items {
     display: flex;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    z-index: 11;
   }
 
   .mobile-nav button {
@@ -116,24 +122,34 @@
   }
 
   .mobile-nav ul {
-    padding: 15px;
+    padding: 0;
     margin: 0;
+    position: relative;
+    z-index: 25;
   }
 
   .drop-down-container {
     position: absolute;
     background-color: #fff;
-    top: 60px;
+    top: 50px;
     filter: drop-shadow(0 0 0.8rem rgba(0, 0, 0, 12%));
     border-radius: 10px;
+    z-index: 40;
+    font-size: 1rem;
+    padding: 25px;
+  }
+
+  .drop-down-container li {
+    margin: 0;
+    padding: 5px 0;
   }
   .box-1 {
-    left: -80px;
-    width: 210px;
+    left: -20px;
+    width: auto;
   }
 
   .box-2 {
     left: 180px;
-    width: 180px;
+    width: auto;
   }
 }

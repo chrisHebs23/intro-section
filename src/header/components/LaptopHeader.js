@@ -11,7 +11,7 @@ const LaptopHeader = ({
   return (
     <div className="mobile-div">
       <nav className="mobile-nav">
-        <div className="nav-items">
+        <ul className="nav-items">
           <li onClick={() => setFeatures(!openFeatures)}>
             Features &nbsp;
             {openFeatures ? (
@@ -72,7 +72,7 @@ const LaptopHeader = ({
           )}
           <li>Careers</li>
           <li>About</li>
-        </div>
+        </ul>
 
         <div>
           <button className="login-button">Login</button>
